@@ -21,7 +21,7 @@ const Navbar = () => {
 
     return (
         <nav className="bg-white border-b border-gray-200 px-6 py-4">
-            <div className="flex justify-between items-center">
+            <div className="flex justify-between items-center container mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
                 {/* Logo */}
                 <h1 className="text-xl font-extrabold text-[#130B2D]">
                     CS — Ticket System

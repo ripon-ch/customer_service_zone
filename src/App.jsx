@@ -1,16 +1,16 @@
 import { useState } from "react";
 import "./index.css";
-import { ToastContainer, toast } from "react-toastify";
+import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import Navbar from "./Components/Navbar";
-
-import { ticketsData } from "./data/ticketsData";
+import Navbar from "./Components/Navbar.jsx";
+import Banner from "./Components/Banner.jsx";
 
 function App() {
-    return(
-    <>
-    <Navbar />
-    </>
+    return (
+        <div className="min-h-screen flex flex-col bg-background text-foreground">
+            <Navbar />
+            <Banner />
+        </div>
     );
 }
 
