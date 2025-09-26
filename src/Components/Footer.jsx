@@ -5,8 +5,8 @@ function Footer() {
     return (
         <footer className="mt-20 bg-black">
             {/* Top Section */}
-            <div className="container mx-auto max-w-6xl px-4 py-12 flex flex-col md:flex-row gap-12">
-                {/* Brand (left side, takes ~40%) */}
+            <div className="container mx-auto max-w-7xl px-4 py-12 flex flex-col md:flex-row gap-12">
+                {/*  left side */}
                 <div className="md:w-2/5">
                     <div className="flex items-center gap-2 font-extrabold text-lg text-white">
                         CS — Ticket System
@@ -20,7 +20,7 @@ function Footer() {
                     </p>
                 </div>
 
-                {/* Right side (4 equal columns) */}
+                {/* Right side */}
                 <div className="md:w-3/5 grid grid-cols-2 lg:grid-cols-4 gap-8">
                     {/* Company */}
                     <div>

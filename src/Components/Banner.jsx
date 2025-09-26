@@ -49,12 +49,12 @@ function Banner() {
         >
             {/* Background patterns */}
             <img
-                className="absolute top-0 left-0 w-32 h-full opacity-70"
+                className="absolute top-0 left-0 w-47 h-full opacity-80"
                 src={bannerLeft}
                 alt="Left background pattern"
             />
             <img
-                className="absolute bottom-0 right-0 w-32 h-full opacity-70"
+                className="absolute bottom-0 right-0 w-47 h-full opacity-80"
                 src={bannerRight}
                 alt="Right background pattern"
             />
@@ -70,7 +70,7 @@ function Banner() {
     );
 
     return (
-        <div className="container mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <section className="my-8 grid grid-cols-1 md:grid-cols-2 gap-6">
                 <BannerStat
                     label="In-Progress"

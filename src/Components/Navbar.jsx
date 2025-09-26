@@ -21,7 +21,7 @@ const Navbar = () => {
 
     return (
         <nav className="bg-white border-b border-gray-200 px-6 py-4">
-            <div className="flex justify-between items-center container mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+            <div className="flex justify-between items-center container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 {/* Logo */}
                 <h1 className="text-xl font-extrabold text-[#130B2D]">
                     CS — Ticket System
@@ -41,15 +41,15 @@ const Navbar = () => {
                         ))}
                     </div>
                     {/* New Ticket Button (Desktop) */}
-                    <button className="bg-gradient-to-r from-[#632EE3] to-[#9F62F2] hover:bg-purple-700 text-white px-4 py-2rounded-md font-medium transition-colors">
-                        New Ticket
+                    <button className="bg-gradient-to-br from-[#632EE3] to-[#9F62F2] hover:bg-purple-700 text-white px-4 py-2 rounded-md font-medium transition-colors">
+                        + New Ticket
                     </button>
                 </div>
 
                 {/* Mobile Menu Button (Hamburger) - visible on 'lg' screens and down */}
                 <div className="lg:hidden flex items-center space-x-4">
                     {/* New Ticket Button (Mobile) */}
-                    <button className="bg-gradient-to-r from-[#632EE3] to-[#9F62F2] hover:bg-purple-700 text-white px-4 py-2 rounded-md font-medium transition-colors">
+                    <button className="bg-gradient-to-br from-[#632EE3] to-[#9F62F2] hover:bg-purple-700 text-white px-4 py-2 rounded-md font-medium transition-colors">
                         + New Ticket
                     </button>
                     <button
