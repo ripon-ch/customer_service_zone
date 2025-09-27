@@ -7,7 +7,7 @@ function TicketCard({ ticket, onSelect, inProgressIds }) {
 
     const pillClasses =
         status === "In-Progress"
-            ? "bg-amber-100 text-amber-800"
+            ? "bg-[#F8F3B9] text-[#9C7700]"
             : status === "Resolved"
             ? "bg-emerald-100 text-emerald-800"
             : "bg-emerald-100 text-emerald-800";
@@ -20,12 +20,15 @@ function TicketCard({ ticket, onSelect, inProgressIds }) {
             : "text-emerald-600";
 
     return (
-        <button onClick={() => onSelect(ticket)} className="w-full text-left h-full">
+        <button
+            onClick={() => onSelect(ticket)}
+            className="w-full text-left h-full"
+        >
             <div className="h-full min-h-[180px] flex flex-col justify-between rounded-xl border border-neutral-200 bg-white p-4 shadow-md hover:shadow-lg transition-shadow">
                 {/* Top row */}
                 <div className="flex items-start justify-between gap-3">
                     <div className="min-w-0">
-                        <h4 className="text-[15px] font-semibold text-neutral-900 leading-snug truncate">
+                        <h4 className="text-[15px] font-semibold text-neutra-900 leading-snug truncate">
                             {ticket.title}
                         </h4>
                         <p className="mt-1 text-sm text-neutral-600 line-clamp-2">
@@ -36,10 +39,10 @@ function TicketCard({ ticket, onSelect, inProgressIds }) {
                         className={`shrink-0 inline-flex items-center gap-2 rounded-full px-3 py-1 text-xs font-medium ${pillClasses}`}
                     >
                         <span
-                            className={`h-2 w-2 rounded-full ${
+                            className={`h-3 w-3 rounded-full ${
                                 status === "In-Progress"
-                                    ? "bg-amber-500"
-                                    : "bg-emerald-500"
+                                    ? "bg-[#FEBB0C]"
+                                    : "bg-[#02A53B]"
                             }`}
                         />
                         {status}
