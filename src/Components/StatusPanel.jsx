@@ -1,11 +1,12 @@
 import React from "react";
+
 function StatusPanel({ inProgress, resolved, onComplete }) {
     return (
         <aside className="space-y-8">
             <div>
-                <h3 className="text-[22px] font-semibold text-slate-700">
+                <h2 className="text-[22px] font-semibold text-slate-700">
                     Task Status
-                </h3>
+                </h2>
                 <div className="mt-3 space-y-4">
                     {inProgress.length === 0 && (
                         <p className="text-sm text-neutral-500">
@@ -32,9 +33,9 @@ function StatusPanel({ inProgress, resolved, onComplete }) {
             </div>
 
             <div>
-                <h3 className="text-[22px] font-semibold text-slate-700">
+                <h2 className="text-[22px] font-semibold text-slate-700">
                     Resolved Task
-                </h3>
+                </h2>
                 <ul className="mt-3 space-y-4">
                     {resolved.length === 0 && (
                         <li className="text-sm text-neutral-500">
@@ -56,4 +57,5 @@ function StatusPanel({ inProgress, resolved, onComplete }) {
         </aside>
     );
 }
+
 export default StatusPanel;

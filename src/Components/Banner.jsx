@@ -108,7 +108,7 @@ function Banner() {
                     </div>
                 </div>
                 <div className="lg:col-span-4">
-                    <h2 className="mb-4 font-semibold text-lg">Task Status</h2>
+
                     <StatusPanel
                         inProgress={inProgress}
                         resolved={resolved}
