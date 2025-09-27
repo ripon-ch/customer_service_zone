@@ -1,4 +1,5 @@
-export default function StatusPanel({ inProgress, resolved, onComplete }) {
+import React from "react"
+ function StatusPanel({ inProgress, resolved, onComplete }) {
   return (
     <aside className="space-y-8">
       <div>
@@ -43,3 +44,4 @@ export default function StatusPanel({ inProgress, resolved, onComplete }) {
     </aside>
   );
 }
+export default StatusPanel;
