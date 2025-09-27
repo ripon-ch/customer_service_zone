@@ -1,16 +1,20 @@
-# React + Vite
+# Customer Support — Ticket System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React + Tailwind responsive ticket system. It displays customer tickets, lets you move items into Task Status, and complete them into a Resolved list. Toast notifications are powered by React-Toastify. The app is JavaScript-only (no TypeScript in app code).
 
-Currently, two official plugins are available:
+## Q&A
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- What is JSX, and why is it used?
+  - JSX is a syntax extension for JavaScript that lets you write UI markup directly in JS files. It looks like HTML but compiles to `React.createElement` calls. It makes components easier to read, write, and reason about.
 
-## React Compiler
+- What is the difference between State and Props?
+  - Props are read-only inputs passed from parent to child components. State is internal, mutable data local to a component (or lifted to a common parent) that triggers re-renders when it changes.
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- What is the `useState` hook, and how does it work?
+  - `useState(initialValue)` returns a state value and a setter function. Calling the setter schedules a re-render with the new state. React preserves state between renders per component instance.
 
-## Expanding the ESLint configuration
+- How can you share state between components in React?
+  - Lift state up to the nearest common parent and pass values and callbacks down via props. For complex trees, use Context, state management libraries, or URL/search params when appropriate.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- How is event handling done in React?
+  - Attach event handlers as props (e.g., `onClick`, `onChange`) using camelCase and pass a function. React wraps native events in a synthetic event system for consistency across browsers.
